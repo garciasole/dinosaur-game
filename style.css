@@ -2,17 +2,44 @@
     padding:0;
     margin:0;
 }
+body{
+    background-image: url(background-website.jpg);
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+}
+
+#container{
+    width: 700px;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+h1{
+    color: rgb(88, 0, 171);
+    font-style: bold;
+}
+.h2-custom{
+    font-style: normal;
+    font-size: 2rem;
+}
 
 #game{
     width: 500px;
     height: 200px;
     border: 1px solid black;
+    background-image: url(background-game.jpg);
+    background-size: 500px 200px;
+    margin: 2rem;
 }
 
 #character{
     width: 20px;
     height: 50px;
-    background-color: red;
+    background-image: url(character.png);
+    background-size: 20px 50px;
     position: relative;
     top: 150px;
 }
@@ -24,7 +51,8 @@
 #block{
     width: 20px;
     height:20px;
-    background-color: blue;
+    background-image:url(block.png);
+    background-size: 20px 20px;
     position:relative;
     top: 130px;
     left: 480px;
@@ -40,5 +68,5 @@
 
 @keyframes block{
     0%{left:480px;}
-    100%{left:-40px;}
+    100%{left:0px;}
 }

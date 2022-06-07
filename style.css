@@ -26,6 +26,13 @@ h1{
     font-size: 2rem;
 }
 
+#counter{
+    margin: 0;
+    color: pink;
+    background-color: blueviolet;
+    font-weight: bold;
+}
+
 #story{
     color:blueviolet;
     padding-bottom: 1rem;
@@ -46,7 +53,7 @@ h1{
     background-image: url(character.png);
     background-size: 80px 100px;
     position: relative;
-    top: 150px;
+    top: 120px;
     left: 20px;
 }
 
@@ -56,7 +63,7 @@ h1{
     background-image: url(character-men.png);
     background-size: 50px 100px;
     position: relative;
-    top: 5px;
+    top: -25px;
     left: 540px;
 }
 
@@ -70,7 +77,7 @@ h1{
     background-image:url(block.png);
     background-size: 40px 40px;
     position:relative;
-    top: 100px;
+    top:80px;
     left: 500px;
     animation: block 1s infinite linear;
     animation-delay: 2s;

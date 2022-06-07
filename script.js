@@ -1,5 +1,6 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
+var characterMen = document.getElementById("character-men")
 
 function jump(){
     if(character.classList !== "animate"){
@@ -18,6 +19,7 @@ var checkDead = setInterval(function(){
   if (blockLeft<40 && blockLeft>0 && characterTop>=100){
     block.style.animation = "none";
     block.style.display = "none";
-    alert("GAME OVER" + "\n" + "you fell in love with a fuckboy :(");
+    characterMen.style.backgroundImage = "url('ghost.png')";
+    //alert("GAME OVER" + "\n" + "you fell in love with a fuckboy :(");
   }
 },10);

@@ -20,6 +20,7 @@ var checkDead = setInterval(function(){
     block.style.animation = "none";
     block.style.display = "none";
     characterMen.style.backgroundImage = "url('ghost.png')";
-    //alert("GAME OVER" + "\n" + "you fell in love with a fuckboy :(");
+    character.style.backgroundImage = "url('character-love.png')";
+    //alert("GAME OVER" + "\n" + "You fell in love with a fuckboy :(" + "\n" + "You slept at his house and two days later he ghosted.");
   }
 },10);

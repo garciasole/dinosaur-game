@@ -15,24 +15,21 @@ function jump(){
 }
 
 // Set game over and score count.
-var isGameOver = false
-var score = 0
+var isGameOver = false;
+var score = 0;
 var checkDead = setInterval(function(){
   if (!isGameOver){ score++};
   var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
   var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
   if ((blockLeft < 50 && blockLeft > 0 && characterTop >= 100)){
+    isGameOver = true;
     block.style.animation = "none";
     block.style.display = "none";
     characterMen.style.backgroundImage = "url('ghost.png')";
     character.style.backgroundImage = "url('character-love.png')";
-    isGameOver = true
-    alert("GAME OVER" + "\n" + "You fell in love with a fuckboy :(" + "\n" + "You slept at his house and two days later he ghosted." + "\n" + "SCORE =" + score);
+    setTimeout( function ( ) {alert("GAME OVER" + "\n" + "You fell in love with a fuckboy :(" + "\n" + "You slept at his house and two days later he ghosted." + "\n" + "SCORE =" + score);},200);
   }
-  console.log({score})
+document.getElementById("counter").innerHTML = score;
 },10);
-
-
-
 
 

@@ -86,6 +86,7 @@ h1{
     animation-delay: 2s;
 }
 
+
 @keyframes jump{
     0%{top:30px;}
     30%{top:40px}
